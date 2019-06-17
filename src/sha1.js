@@ -356,16 +356,19 @@
     return buffer;
   };
 
-  var exports = createMethod();
+  // var exports = createMethod();
 
-  if (COMMON_JS) {
-    module.exports = exports;
-  } else {
-    root.sha1 = exports;
-    if (AMD) {
-      define(function () {
-        return exports;
-      });
-    }
-  }
-})();
+  // if (COMMON_JS) {
+  //   module.exports = exports;
+  // } else {
+  //   root.sha1 = exports;
+  //   if (AMD) {
+  //     define(function () {
+  //       return exports;
+  //     });
+  //   }
+  // }
+})()
+
+
+
